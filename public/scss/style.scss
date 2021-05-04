@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url("/image/back1.png"); */
+    background-color: rgb(255, 255, 255);
+    background-image: url("/image/back2.png");
+
+}
+/* HOME PAGE */
+main.homePage{
+    padding: 15px; 
+    background-attachment: fixed; 
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.bigContainerHome {
+    width: 100%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    padding: 14px;
+    margin-top: 78px;
+} 
+  .bigContainerHome:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+  }
+
+  .main-image img{
+    width: 100%;
+  }
+
+
+.name{
+    text-align: center;
+    display: block;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 60px;
+    color:#393950;
+    text-decoration: italic;
+}
+.name2{
+    margin-top: 0px;
+}
+//   BURGER MENU CODE
+.burger-menu{
+    background-color: #393950;
+    
+    padding: 16px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+   
+    position: absolute;
+    z-index: 10;
+    
+    
+}
+.burger-menu i{
+    font-size: 16px;
+    color:#ebebeb;
+}
+// NAV BAR CODE
+nav{
+    background-color:#393950 ;
+    display: none;
+ 
+}   
+
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;    
+    justify-content: center;
+}
+nav ul li{
+    padding: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ebebeb;;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.borderLeftRight {
+    display: inline-block;
+    position: relative;
+    color: #ebebeb;
+  }
+  
+  .borderLeftRight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FAAC2A;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .borderLeftRight:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+// ARROW CODE
+.arrow{
+    position: fixed;
+    right: 18px;
+    z-index: 9;
+    bottom: 8px;
+    font-size: 40px;
+
+}
+.arrow i {
+    color: #39395081;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(250, 172, 42, 0.7);
+    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.arrow {
+    padding: 12px 24px;
+   
+}
+
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    }
+}
+  
+
+@media (min-width: 800px){
+    .bigContainerHome{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-image{
+        width: 50%;
+      }
+      .main-image img{
+          margin-top: 120px;
+      }
+    
+    .nameContainer{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }  
+    nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main.homePage{
+        height: initial;
+    }
+      
+}
+@media (min-width: 1200px){
+    .main-image img{
+        margin-top: 50px;
+    }
+}
