@@ -162,74 +162,6 @@ nav ul li a{
     }
 }
   
-// SKILLS SECTION CODE
-
-.sections-banner {
-    width: 100%;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    padding: 14px;
-    margin-top: 78px;
-} 
-.sections-banner:before {
-    content: "";
-    position: absolute;
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-    margin: -20px;
-}
-
-
-.skills-target-container{
-    // border: red solid 2px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    justify-content: space-around;
-}
-
-.skills-target{
-    background-color: rgba(255, 255, 255, 0.384);
-    border-radius: 10px;
-    max-width: 220px;
-    // border: blue solid 2px;   
-    transition: all 420ms;
-    cursor: pointer;
-    padding: 10px;
-    margin: 10px;
-}
-.skills-target:hover{
-    box-shadow: -1px 2px 17px -1px rgba(0,0,0,0.76);
-    -webkit-box-shadow: -1px 2px 17px -1px rgba(0,0,0,0.76);
-    -moz-box-shadow: -1px 2px 17px -1px rgba(0,0,0,0.76);
-
-}
-    .skills-target img{
-        display: block;
-        margin: 0 auto;
-    }
-    .skills-target h3{
-        text-align: center;
-        font-family: 'Nunito', sans-serif;
-        color: #212529;
-        font-weight: 200;
-    }
-
-
-
-
-
 // FOOTER CODE
 
 .copyright{
@@ -287,12 +219,7 @@ nav ul li a{
         height: initial;
     }
 
-    //SKILLS
-    .skills-target-container{        
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+   
       
 }
 @media (min-width: 1200px){
@@ -302,3 +229,7 @@ nav ul li a{
 }
 
 @import 'contact';
+@import 'about-me';
+@import 'skills';
+
+
