@@ -2,10 +2,59 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background-image: url("/image/back1.png"); */
   background-color: white;
   background-image: url("/image/back2.png");
+  transition: 0.3s ease all;
+}
+body.dark {
+  background-color: #393950;
+  background-image: url("/image/dark-mode.png");
+}
+
+.switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: #FAAC2A;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
 }
 
 /* HOME PAGE */
@@ -55,6 +104,9 @@ main.homePage {
   font-size: 60px;
   color: #393950;
 }
+body.dark .name {
+  color: #ebebeb;
+}
 
 .name2 {
   margin-top: 0px;
@@ -86,6 +138,7 @@ nav {
   display: none;
   width: 100%;
   z-index: 100;
+  height: 62px;
 }
 
 nav ul {
@@ -146,6 +199,9 @@ nav ul li a {
   border-radius: 50%;
   box-shadow: 0 0 0 0 rgba(250, 172, 42, 0.7);
   animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+body.dark .arrow i {
+  color: rgba(255, 255, 255, 0.61);
 }
 
 .arrow {
@@ -243,6 +299,9 @@ nav ul li a {
   margin-bottom: 30px;
   cursor: pointer;
 }
+body.dark .contact-icon i {
+  color: #ebebeb;
+}
 
 .contact-icon i:hover {
   color: #393950;
@@ -261,6 +320,9 @@ nav ul li a {
     padding: 10px;
     color: #393950;
   }
+  body.dark .github:hover::before {
+    color: #ebebeb;
+  }
 
   .codepen:hover::after {
     content: "Here you can find some codes to use on your website or in your projects :)";
@@ -273,6 +335,9 @@ nav ul li a {
     border-radius: 20px 20px 20px 0px;
     padding: 10px;
     color: #393950;
+  }
+  body.dark .codepen:hover::after {
+    color: #ebebeb;
   }
 
   .linkedin:hover::before {
@@ -287,6 +352,9 @@ nav ul li a {
     padding: 10px;
     color: #393950;
   }
+  body.dark .linkedin:hover::before {
+    color: #ebebeb;
+  }
 
   .email:hover::after {
     content: "If you want to know something more about me or my work please send me an email and I'll contact you as soon as I can!";
@@ -300,6 +368,9 @@ nav ul li a {
     padding: 10px;
     color: #393950;
     transition: all 420ms;
+  }
+  body.dark .email:hover::after {
+    color: #ebebeb;
   }
 }
 .big-container-about {
@@ -329,14 +400,40 @@ nav ul li a {
   max-width: 700px;
   padding: 10px;
 }
+body.dark .about-text {
+  color: #ebebeb;
+}
+
+.butDownload {
+  border: none;
+  padding: 12px;
+  width: 40%;
+  color: #ebebeb;
+  background-color: #393950;
+  font-family: "Source Serif Pro", serif;
+  min-width: 322px;
+  cursor: pointer;
+  transition: all 420ms;
+  border-radius: 2px;
+}
+
+.butDownload:hover {
+  background-color: #3939506e;
+  color: #ebebeb;
+}
+body.dark .butDownload:hover {
+  background-color: #ffffff6e;
+  color: #393950;
+}
+
+.div-butStyle {
+  display: flex;
+  justify-content: center;
+}
 
 @media (min-width: 800px) {
   .about-text {
-    font-family: "Source Serif Pro", serif;
-    color: #393950;
     padding-top: 100px;
-    font-size: 20px;
-    max-width: 700px;
   }
 
   .big-container-about {
@@ -375,15 +472,17 @@ nav ul li a {
   margin: -20px;
 }
 
-.skills-target-container {
+.big-skill-section {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
   justify-content: space-around;
 }
 
-.skills-target {
+.skills-target-container {
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
   background-color: rgba(255, 255, 255, 0.384);
   border-radius: 10px;
   max-width: 220px;
@@ -393,47 +492,111 @@ nav ul li a {
   margin: 10px;
 }
 
-.skills-target:hover {
+.skills-target-container:hover {
   box-shadow: -1px 2px 17px -1px rgba(0, 0, 0, 0.76);
   -webkit-box-shadow: -1px 2px 17px -1px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: -1px 2px 17px -1px rgba(0, 0, 0, 0.76);
 }
-
-.skills-target img {
-  display: block;
-  margin: 0 auto;
+body.dark .skills-target-container:hover {
+  box-shadow: -1px 2px 17px -1px rgba(255, 255, 255, 0.76);
+  -webkit-box-shadow: -1px 2px 17px -1px rgba(255, 255, 255, 0.76);
+  -moz-box-shadow: -1px 2px 17px -1px rgba(255, 255, 255, 0.76);
 }
 
-.skills-target h3 {
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.skills-target-container:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: #212529;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  color: #212529;
+}
+body.dark .flip-box-front {
+  color: #ebebeb;
+}
+
+.flip-box-front h3 {
   font-weight: 200;
 }
 
-.agile-target:hover::after {
-  content: "SCRUM - JIRA - TRELLO - SLACK - DISCORD";
-  height: 300px;
-  transition: all 4s;
-  font-family: "Nunito", sans-serif;
+.flip-box-back {
   color: #212529;
-  font-weight: 200;
+  transform: rotateY(180deg);
 }
-
-.node-target:hover::after {
-  content: "EXPRESS";
-  height: 300px;
-  transition: all 4s;
-  font-family: "Nunito", sans-serif;
-  color: #212529;
-  font-weight: 200;
+body.dark .flip-box-back {
+  color: #ebebeb;
 }
 
 @media (min-width: 800px) {
-  .skills-target-container {
+  .big-skill-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.big-container-softSkills {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.checkbox-container h3 {
+  display: inline-block;
+  font-family: "Source Serif Pro", serif;
+  color: #212529;
+}
+body.dark .checkbox-container h3 {
+  color: #ebebeb;
+}
+
+.checkbox-container {
+  display: block;
+}
+
+.checkbox-container i {
+  color: #393950;
+  font-size: 2em;
+  transition: all 420ms;
+  cursor: pointer;
+}
+body.dark .checkbox-container i {
+  color: #ebebeb;
+  transition: all 420ms;
+}
+
+.checkbox-container i:hover {
+  color: #60cf60;
+}
+body.dark .checkbox-container i:hover {
+  color: #60cf60;
+}
+
+@media (min-width: 800px) {
+  .big-container-softSkills {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 

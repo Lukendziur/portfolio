@@ -27,13 +27,24 @@
                     </div>
                     <%- include('partials/about-me') %>
 
+                   
+
 
                 </section>
 
                 <section class="skills-Section">
                     <div class="sections-banner">
-                        <h1 class="name">Skills</h1>
+                        <h1 class="name">Soft Skills</h1>
                             <a name="skills"></a>
+
+                    </div>
+                    <%- include('partials/soft-skills') %> 
+                    
+                </section>
+
+                <section class="skills-Section">
+                    <div class="sections-banner">
+                        <h1 class="name">Technical Skills</h1>                            
 
                     </div>
                     <%- include('partials/skills') %>
@@ -51,7 +62,7 @@
 
                 <section class="contact">
                     <div class="sections-banner">
-                        <h1 class="name">Contact </h1>
+                        <h1 class="name" id="link4">Contact </h1>
                             <a name="contact"></a>
                     </div>
                     <%- include('partials/contact') %>
@@ -62,6 +73,15 @@
 
         <%- include('partials/footer') %>
 
+        <script>
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active')
+})
+        </script>
     </body>
 
 </html>

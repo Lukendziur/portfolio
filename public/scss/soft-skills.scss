@@ -1,0 +1,46 @@
+.big-container-softSkills{
+    width: 100%;  
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.checkbox-container h3{
+    display: inline-block;
+    font-family: 'Source Serif Pro', serif;
+    color: #212529;
+    body.dark &{
+        color: #ebebeb;
+    } 
+}
+.checkbox-container {    
+    display: block;
+}
+.checkbox-container i{
+    color:#393950;
+    font-size: 2em;
+    transition: all 420ms;
+    cursor: pointer;
+    body.dark &{
+        color: #ebebeb;
+        transition: all 420ms;
+
+    } 
+}
+.checkbox-container i:hover{
+    color: rgb(96, 207, 96);
+    body.dark &{
+    color: rgb(96, 207, 96);
+
+    }
+}
+
+
+
+@media(min-width:800px){
+.big-container-softSkills{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+}

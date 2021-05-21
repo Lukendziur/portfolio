@@ -24,6 +24,9 @@
     margin-top: 10px;
     margin-bottom: 30px;
     cursor: pointer;
+    body.dark &{
+        color:#ebebeb;
+    }
 }
 
  .contact-icon i:hover{
@@ -44,6 +47,9 @@
         border-radius: 20px 20px 0px 20px;       
         padding: 10px;
         color: #393950;
+        body.dark &{
+            color: #ebebeb;
+        }
     }
     .codepen:hover::after{
         content: "Here you can find some codes to use on your website or in your projects :)";           
@@ -56,6 +62,9 @@
         border-radius: 20px 20px 20px 0px;        
         padding: 10px;
         color: #393950;
+        body.dark &{
+            color: #ebebeb;
+        }
         
     }
     .linkedin:hover::before{
@@ -69,6 +78,9 @@
         border-radius: 20px 20px 0px 20px;       
         padding: 10px;
         color: #393950;
+        body.dark &{
+            color: #ebebeb;
+        }
     }
     .email:hover::after{
         content: "If you want to know something more about me or my work please send me an email and I'll contact you as soon as I can!";    
@@ -83,6 +95,10 @@
         padding: 10px;
         color: #393950;
         transition: all 420ms;
+        body.dark &{
+            color: #ebebeb;
+        }
+       
         
     }
     
@@ -90,3 +106,5 @@
 
     
 }
+
+

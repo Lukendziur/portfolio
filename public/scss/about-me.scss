@@ -1,51 +1,74 @@
-.big-container-about{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 1000px;
-    margin: auto;
-    // border: red solid 2px;
+.big-container-about {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
+  // border: red solid 2px;
 }
 
-.img-container-me img{
-   display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 50px auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-
-
+.img-container-me img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 50px auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-.about-text{
-    font-family: "Source Serif Pro", serif;
-    color: #393950;
-    // border: green solid 2px;
-    text-align: justify;   
-    font-size: 20px;
-    max-width: 700px;
-    padding: 10px;
+.about-text {
+  font-family: "Source Serif Pro", serif;
+  color: #393950;
+  // border: green solid 2px;
+  text-align: justify;
+  font-size: 20px;
+  max-width: 700px;
+  padding: 10px;
+  body.dark & {
+    color: #ebebeb;
+  }
 }
-@media(min-width: 800px){
-    .about-text{
-        font-family: "Source Serif Pro", serif;
-        color: #393950;
-        
-        padding-top: 100px;    
-        font-size: 20px;
-        max-width: 700px;
-    }
-    .big-container-about{
-        display: flex;
-        flex-direction: row;
-    }
+
+.butDownload {
+  border: none;
+  padding: 12px;
+  width: 40%;
+  color: #ebebeb;
+  background-color: #393950;
+  font-family: "Source Serif Pro", serif;
+  min-width: 322px;
+  cursor: pointer;
+  transition: all 420ms;
+  border-radius: 2px;
+  
   
 }
-@media(min-width: 1200px){
-    
-    figcaption.img-container-me {
-        margin-top: 36px;
-    }
+.butDownload:hover {
+  background-color: #3939506e;
+  color:#ebebeb;
+  body.dark &{
+    background-color: #ffffff6e;
+    color: #393950;
+}
+}
+
+.div-butStyle {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .about-text {
+    padding-top: 100px;
+  }
+  .big-container-about {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  figcaption.img-container-me {
+    margin-top: 36px;
+  }
 }
