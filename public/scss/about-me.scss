@@ -10,8 +10,8 @@
 
 .img-container-me img {
   display: block;
-  width: 200px;
-  height: 200px;
+  // width: 200px;
+  height: 300px;
   object-fit: cover;
   margin: 50px auto;
   border-radius: 50%;
@@ -25,6 +25,7 @@
   font-size: 20px;
   max-width: 700px;
   padding: 10px;
+  line-height: 35px;
   body.dark & {
     color: #ebebeb;
   }

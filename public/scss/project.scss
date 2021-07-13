@@ -1,0 +1,150 @@
+.bigSectionProjects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: space-around !important;
+}
+
+.projectTarget img{
+    max-width: 100%;
+    height: auto;
+    transition: all 420ms;
+}
+
+.projectTarget{
+    display: block;
+    margin: 0 auto;
+}
+ .noneTarget{
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 280px;
+    height: 160px;
+    opacity: 0;
+    transition: all 1s;
+    cursor: pointer;
+ }
+ .noneTarget:hover{
+     opacity: 1;
+ }
+ .noneTarget h3{
+     color: #ebebeb;
+     font-family: 'Roboto', sans-serif;
+ }
+.containerCaption{
+    width: 280px;
+    position: relative;
+}
+
+.viewProjectButton{
+    margin: 0 auto;
+    border: $myYellow solid 2px;
+    border-radius: 30px;
+    background: transparent;
+    padding: 5px;
+    cursor: pointer;
+    color: #ebebeb;
+}
+
+// SLIDER
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.contenido-slider{
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(2){
+    
+    color: #fff;
+}
+
+.contenido-slider:nth-child(3){
+    background-image: url('/images/designImages/web2.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+.contenido-slider > img{
+    width: 100%;
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+} 
+
+ .contenido-slider a{
+    color: #fff;
+    background: #332863;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.contenido-slider:nth-child(2) a{
+    background: #fff;
+    color: #332863;
+    
+}
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:800px){
+    .bigSectionProjects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .projectTarget{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:900px){
+   
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
