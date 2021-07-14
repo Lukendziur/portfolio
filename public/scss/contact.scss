@@ -6,7 +6,10 @@
   width: fit-content;
   margin: 0 auto;
   position: relative;
-    left: 162px;
+    
+}
+.contact-icon h3{
+display: none;
 }
 .contact-icon a {
   margin: 0 auto;
@@ -35,89 +38,94 @@
 }
 
 @media (min-width: 800px) {
-  .github:hover::before {
-    content: "Here you can see my projects and the way I code them";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 0px 20px;
-    padding: 10px;
-    color: #393950;
-    body.dark & {
-      color: #ebebeb;
-    }
+  .contact-icon{
+    left: 162px;
   }
-  .codepen:hover::after {
-    content: "Here you can find some codes to use on your website or in your projects :)";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 20px 0px;
-    padding: 10px;
-    color: #393950;
+  // .github:hover::before {
+  //   content: "Here you can see my projects and the way I code them";
+  //   width: 300px;
+  //   font-size: 22px;
+  //   display: inline-block;
+  //   position: relative;
+  //   background: transparent;
+  //   border: #faae2ac2 solid 2px;
+  //   border-radius: 20px 20px 0px 20px;
+  //   padding: 10px;
+  //   color: #393950;
+  //   body.dark & {
+  //     color: #ebebeb;
+  //   }
+  // }
+  // .codepen:hover::after {
+  //   content: "Here you can find some codes to use on your website or in your projects :)";
+  //   width: 300px;
+  //   font-size: 22px;
+  //   display: inline-block;
+  //   position: relative;
+  //   background: transparent;
+  //   border: #faae2ac2 solid 2px;
+  //   border-radius: 20px 20px 20px 0px;
+  //   padding: 10px;
+  //   color: #393950;
 
-    body.dark & {
-      color: #ebebeb;
-    }
-  }
-  .linkedin:hover::before {
-    content: "You can find me and contact me on Linkedin too";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 0px 20px;
-    padding: 10px;
-    color: #393950;
+  //   body.dark & {
+  //     color: #ebebeb;
+  //   }
+  // }
+  // .linkedin:hover::before {
+  //   content: "You can find me and contact me on Linkedin too";
+  //   width: 300px;
+  //   font-size: 22px;
+  //   display: inline-block;
+  //   position: relative;
+  //   background: transparent;
+  //   border: #faae2ac2 solid 2px;
+  //   border-radius: 20px 20px 0px 20px;
+  //   padding: 10px;
+  //   color: #393950;
 
-    body.dark & {
-      color: #ebebeb;
-    }
-  }
-  .email:hover::after {
-    content: "If you want to know something more about me or my work please send me an email and I'll contact you as soon as I can!";
+  //   body.dark & {
+  //     color: #ebebeb;
+  //   }
+  // }
+  // .email:hover::after {
+  //   content: "If you want to know something more about me or my work please send me an email and I'll contact you as soon as I can!";
 
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 20px 0px;
-    padding: 10px;
-    color: #393950;
+  //   width: 300px;
+  //   font-size: 22px;
+  //   display: inline-block;
+  //   position: relative;
+  //   background: transparent;
+  //   border: #faae2ac2 solid 2px;
+  //   border-radius: 20px 20px 20px 0px;
+  //   padding: 10px;
+  //   color: #393950;
 
-    body.dark & {
-      color: #ebebeb;
-    }
-  }
+  //   body.dark & {
+  //     color: #ebebeb;
+  //   }
+  // }
 
   // ESPACIO PRUEBA
-  .disparador h3 {
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 20px 0px;
-    padding: 10px;
-    color: #393950;
-    opacity: 0;
-    transition: all 420ms;
-    body.dark & {
-      color: #ebebeb;
-    }
-  }
+ 
 //   .disparador h3:hover{
 //       opacity: 1;
 //   }
+
+.disparador h3 {
+  width: 300px;
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  background: transparent;
+  border: #faae2ac2 solid 2px;
+  border-radius: 20px 20px 20px 0px;
+  padding: 10px;
+  color: #393950;
+  opacity: 0;
+  transition: all 420ms;
+  body.dark & {
+    color: #ebebeb;
+  }
+}
 }

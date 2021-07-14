@@ -35,7 +35,8 @@ triggerButton.addEventListener('click', () => {
 const icon = document.getElementById('linkedin')
 const h3 = document.getElementById('h3')
 icon.addEventListener('mouseover', ()=>{ 
-    if(icon){
+    if(icon && window.matchMedia("(min-width: 800px)").matches){
+       h3.style.display = 'inline-block';
         h3.style.opacity = '1';        
     }}
    
@@ -53,8 +54,10 @@ icon.addEventListener('mouseout', ()=>{
 const codepen = document.getElementById('codepen')
 const code = document.getElementById('code')
 codepen.addEventListener('mouseover', ()=>{ 
-    if(codepen){
-        code.style.opacity = '1';        
+    if(codepen&& window.matchMedia("(min-width: 800px)").matches){
+        code.style.display = 'inline-block'
+        code.style.opacity = '1';  
+              
     }}
    
 )
@@ -69,13 +72,14 @@ codepen.addEventListener('mouseout', ()=>{
 const github = document.getElementById('github')
 const git = document.getElementById('git')
 github.addEventListener('mouseover', ()=>{ 
-    if(github){
+    if(github && window.matchMedia("(min-width: 800px)").matches){
+        git.style.display = 'inline-block';
         git.style.opacity = '1';        
     }}
    
 )
 github.addEventListener('mouseout', ()=>{
-    if(github){
+    if(github && window.matchMedia("(min-width: 800px)").matches){
         git.style.opacity = '0'
         
     }
@@ -84,18 +88,26 @@ github.addEventListener('mouseout', ()=>{
 
 const email = document.getElementById('email')
 const em = document.getElementById('em')
+
+
 email.addEventListener('mouseover', ()=>{ 
-    if(email){
+    if(email && window.matchMedia("(min-width: 800px)").matches){
+        em.style.display = 'inline-block';
         em.style.opacity = '1';        
-    }}
+}}
    
 )
 email.addEventListener('mouseout', ()=>{
-    if(email){
+    if(email && window.matchMedia("(min-width: 800px)").matches){
         em.style.opacity = '0'
         
     }
 })
+
+
+
+
+
 })
 
 

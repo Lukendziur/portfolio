@@ -381,7 +381,10 @@ body.dark .arrow i {
   width: fit-content;
   margin: 0 auto;
   position: relative;
-  left: 162px;
+}
+
+.contact-icon h3, .contact-icon .h3 {
+  display: none;
 }
 
 .contact-icon a {
@@ -411,68 +414,8 @@ body.dark .contact-icon i {
 }
 
 @media (min-width: 800px) {
-  .github:hover::before {
-    content: "Here you can see my projects and the way I code them";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 0px 20px;
-    padding: 10px;
-    color: #393950;
-  }
-  body.dark .github:hover::before {
-    color: #ebebeb;
-  }
-
-  .codepen:hover::after {
-    content: "Here you can find some codes to use on your website or in your projects :)";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 20px 0px;
-    padding: 10px;
-    color: #393950;
-  }
-  body.dark .codepen:hover::after {
-    color: #ebebeb;
-  }
-
-  .linkedin:hover::before {
-    content: "You can find me and contact me on Linkedin too";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 0px 20px;
-    padding: 10px;
-    color: #393950;
-  }
-  body.dark .linkedin:hover::before {
-    color: #ebebeb;
-  }
-
-  .email:hover::after {
-    content: "If you want to know something more about me or my work please send me an email and I'll contact you as soon as I can!";
-    width: 300px;
-    font-size: 22px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    border: #faae2ac2 solid 2px;
-    border-radius: 20px 20px 20px 0px;
-    padding: 10px;
-    color: #393950;
-  }
-  body.dark .email:hover::after {
-    color: #ebebeb;
+  .contact-icon {
+    left: 162px;
   }
 
   .disparador h3, .disparador .h3 {
