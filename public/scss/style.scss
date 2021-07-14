@@ -129,7 +129,7 @@ button#switchMobile{
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     background-color: $myBlueViolet;
-    height: 300px;
+    height: 327px;
    
     
 }
@@ -286,7 +286,9 @@ i.fas.fa-bars{
     transform-origin: bottom left;
   }
 
-
+.styleMobileNav ul{
+    margin-top: -77px;
+}
 
 // ARROW CODE
 .arrow{
@@ -395,6 +397,10 @@ i.fas.fa-bars{
 @import 'skills';
 @import 'soft-skills';
 @import 'project';
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
 
 
 
