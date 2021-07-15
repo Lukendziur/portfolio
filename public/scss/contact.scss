@@ -39,7 +39,10 @@ display: none;
 
 @media (min-width: 800px) {
   .contact-icon{
-    left: 162px;
+    left: 150px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
   // .github:hover::before {
   //   content: "Here you can see my projects and the way I code them";

@@ -416,7 +416,10 @@ body.dark .contact-icon i {
 
 @media (min-width: 800px) {
   .contact-icon {
-    left: 162px;
+    left: 150px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .disparador h3, .disparador .h3 {
@@ -605,6 +608,7 @@ body.dark .flip-box-front {
   display: inline-block;
   font-family: "Source Serif Pro", serif;
   color: #212529;
+  font-size: 20px;
 }
 body.dark .checkbox-container h3, body.dark .checkbox-container .h3 {
   color: #ebebeb;
@@ -636,6 +640,10 @@ body.dark .checkbox-container i:hover {
   .big-container-softSkills {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .checkbox-container h3, .checkbox-container .h3 {
+    font-size: 24px;
   }
 }
 .bigSectionProjects {
@@ -804,7 +812,7 @@ body.dark .textDescription h2, body.dark .textDescription .h2 {
 }
 .EN {
   position: relative;
-  left: 62%;
+  left: 54%;
   bottom: 51px;
   text-decoration: none;
   color: #ebebeb;

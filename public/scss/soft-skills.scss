@@ -9,6 +9,7 @@
     display: inline-block;
     font-family: 'Source Serif Pro', serif;
     color: #212529;
+    font-size: 20px;
     body.dark &{
         color: #ebebeb;
     } 
@@ -41,6 +42,9 @@
 .big-container-softSkills{
     flex-direction: row;
     justify-content: space-around;
+}
+.checkbox-container h3{
+    font-size: 24px;
 }
 
 }
