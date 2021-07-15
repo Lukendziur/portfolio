@@ -619,7 +619,7 @@ body.dark .flip-box-front {
   display: inline-block;
   font-family: "Source Serif Pro", serif;
   color: #212529;
-  font-size: 19px;
+  font-size: 18px;
 }
 body.dark .checkbox-container h3, body.dark .checkbox-container .h3 {
   color: #ebebeb;
@@ -654,7 +654,7 @@ body.dark .checkbox-container i:hover {
   }
 
   .checkbox-container h3, .checkbox-container .h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .bigSectionProjects {
