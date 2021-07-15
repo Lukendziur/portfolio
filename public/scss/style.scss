@@ -216,6 +216,7 @@ main.homePage{
     position: fixed;
     z-index: 10;
     width: 100%;
+    height: 79px;
     // padding-left: 20px;
     // padding-right: 20px; 
     
@@ -397,7 +398,9 @@ i.fas.fa-bars{
 @import 'skills';
 @import 'soft-skills';
 @import 'project';
-// @import "../node_modules/bootstrap/scss/bootstrap";
+@import 'lenguage';
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/eshead') %>
+
+
+    <body>
+        <%- include('partials/esheader') %>
+            <main class="homePage">
+                <section class="bigContainerHome">
+
+                    <div class="nameContainer">
+                        <h1 class="name">
+                            Lucila V. Kendziur
+                        </h1>
+                        <h2 class="name name2">Desarrolladora Web Full Stack</h2>
+                    </div>
+
+                    <figcaption class="main-image">
+                        <img src="./image/me.svg" alt="picture">
+                    </figcaption>
+                </section>
+
+                <section class="aboutMe">
+                    <div class="sections-banner">
+                        <h1 class="name">Sobre mi</h1>
+                        <a name="about"></a>
+                    </div>
+                    <%- include('partials/sobre-mi') %>
+
+
+
+
+                </section>
+
+                <section class="skills-Section">
+                    <div class="sections-banner">
+                        <h1 class="name">Habilidades blandas</h1>
+                        <a name="skills"></a>
+
+                    </div>
+                    <%- include('partials/habilidadesblandas') %>
+
+                </section>
+
+                <section class="skills-Section">
+                    <div class="sections-banner">
+                        <h1 class="name">Habilidades Técnicas</h1>
+
+                    </div>
+                    <%- include('partials/habilidades') %>
+
+                </section>
+
+
+                <section class="projects">
+                    <div class="sections-banner">
+                        <h1 class="name">Proyectos</h1>
+                        <a name="projects"></a>
+                    </div>
+                    <%- include('partials/proyectos') %>
+
+
+                </section>
+
+                <section class="contact">
+                    <div class="sections-banner">
+                        <h1 class="name" id="link4">Contacto </h1>
+                        <a name="contact"></a>
+                    </div>
+                    <%- include('partials/contacto') %>
+
+                </section>
+
+            </main>
+
+            <%- include('partials/esfooter') %>
+
+                <script src="/js/main.js" type="text/javascript">                   
+
+                </script>
+    </body>
+
+</html>

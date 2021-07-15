@@ -208,6 +208,7 @@ body.dark .name {
   position: fixed;
   z-index: 10;
   width: 100%;
+  height: 79px;
 }
 
 .burger-menu i {
@@ -801,6 +802,24 @@ body.dark .textDescription h2, body.dark .textDescription .h2 {
     margin-right: 5px;
   }
 }
+.EN {
+  position: relative;
+  left: 62%;
+  bottom: 51px;
+  text-decoration: none;
+  color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+}
+
+.EN:hover {
+  color: #FAAC2A;
+  text-decoration: underline;
+}
+
+.byelanguage {
+  display: none !important;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

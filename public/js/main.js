@@ -20,10 +20,11 @@ btnSwitchMobile.addEventListener('click', () => {
 const triggerButton = document.getElementById('trigger')            
 const nav = document.getElementById('mobileNav')
 const switchmode = document.getElementById('switchMobile')     
-
+const language = document.getElementById('language')
 triggerButton.addEventListener('click', () => {
     if (triggerButton) {
         switchmode.classList.toggle('byeSwitch')
+        language.classList.toggle('byelanguage')
         nav.classList.toggle('mobileNav-block')                   
 
     }

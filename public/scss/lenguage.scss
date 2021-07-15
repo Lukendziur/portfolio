@@ -1,0 +1,16 @@
+.EN{
+    position: relative;
+    left: 62%;
+    bottom: 51px;
+    text-decoration: none;
+    color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+.EN:hover{
+    color: $myYellow;
+    text-decoration: underline;
+}
+
+.byelanguage{
+    display: none !important;
+}
