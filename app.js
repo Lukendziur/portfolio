@@ -17,8 +17,8 @@ app.use('/project', projectRouter);
 const esRouter = require('./routes/esRoutes');
 app.use('/es', esRouter);
 
-const esProjectRouter = require('./routes/esprojectRoutes');
-app.use('/proyecto', esProjectRouter);
+// const esProjectRouter = require('./routes/esprojectRoutes');
+// app.use('/proyecto', esProjectRouter);
 //Catching error
 
 app.use((req, res, next) => {
