@@ -548,8 +548,8 @@ body.dark .butDownload:hover {
 
 .skills-target-container {
   margin-top: 50px;
-  width: 175px;
-  height: 168px;
+  width: 100px;
+  height: 100px;
   perspective: 1000px;
   background-color: rgba(255, 255, 255, 0.384);
   border-radius: 10px;
@@ -576,8 +576,8 @@ body.dark .skills-target-container:hover {
 }
 
 .skills-target-container img {
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
 }
 
 .flip-box-front {
@@ -595,6 +595,16 @@ body.dark .flip-box-front {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .skills-target-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .skills-target-container img {
+    width: 80px;
+    height: 80px;
   }
 }
 .big-container-softSkills {
