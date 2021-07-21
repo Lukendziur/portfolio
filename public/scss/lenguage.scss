@@ -1,10 +1,11 @@
 .EN{
     position: relative;
-    left: 54%;
+    left: 35%;
     bottom: 51px;
     text-decoration: none;
     color: #ebebeb;
     font-family: 'Roboto', sans-serif;
+    margin-right: 5px;
 }
 .EN:hover{
     color: $myYellow;
@@ -13,4 +14,9 @@
 
 .byelanguage{
     display: none !important;
+}
+@media (min-width:800px){
+    .EN{
+        margin-right: -5px;
+    }
 }

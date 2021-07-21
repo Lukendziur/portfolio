@@ -823,11 +823,12 @@ body.dark .textDescription h2, body.dark .textDescription .h2 {
 }
 .EN {
   position: relative;
-  left: 54%;
+  left: 35%;
   bottom: 51px;
   text-decoration: none;
   color: #ebebeb;
   font-family: "Roboto", sans-serif;
+  margin-right: 5px;
 }
 
 .EN:hover {
@@ -839,6 +840,11 @@ body.dark .textDescription h2, body.dark .textDescription .h2 {
   display: none !important;
 }
 
+@media (min-width: 800px) {
+  .EN {
+    margin-right: -5px;
+  }
+}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
