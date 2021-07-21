@@ -640,13 +640,6 @@ body.dark .checkbox-container i {
   transition: all 420ms;
 }
 
-.checkbox-container i:hover {
-  color: #60cf60;
-}
-body.dark .checkbox-container i:hover {
-  color: #60cf60;
-}
-
 @media (min-width: 800px) {
   .big-container-softSkills {
     flex-direction: row;
